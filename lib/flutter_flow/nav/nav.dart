@@ -40,7 +40,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                 ),
               ),
             )
-          : const HomePageWidget(),
+          : const HomeWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
@@ -55,12 +55,17 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                     ),
                   ),
                 )
-              : const HomePageWidget(),
+              : const HomeWidget(),
         ),
         FFRoute(
-          name: 'HomePage',
-          path: '/homePage',
-          builder: (context, params) => const HomePageWidget(),
+          name: 'home',
+          path: '/home',
+          builder: (context, params) => const HomeWidget(),
+        ),
+        FFRoute(
+          name: 'story',
+          path: '/story',
+          builder: (context, params) => const StoryWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
