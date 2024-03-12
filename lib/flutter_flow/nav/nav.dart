@@ -63,9 +63,49 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const HomeWidget(),
         ),
         FFRoute(
-          name: 'story',
-          path: '/story',
-          builder: (context, params) => const StoryWidget(),
+          name: 'act-1',
+          path: '/act-1',
+          builder: (context, params) => const Act1Widget(),
+        ),
+        FFRoute(
+          name: 'end-1',
+          path: '/end-1',
+          builder: (context, params) => const End1Widget(),
+        ),
+        FFRoute(
+          name: 'act-2',
+          path: '/act-2',
+          builder: (context, params) => const Act2Widget(),
+        ),
+        FFRoute(
+          name: 'end-2',
+          path: '/end-2',
+          builder: (context, params) => const End2Widget(),
+        ),
+        FFRoute(
+          name: 'act-3',
+          path: '/act-3',
+          builder: (context, params) => const Act3Widget(),
+        ),
+        FFRoute(
+          name: 'end-3',
+          path: '/end-3',
+          builder: (context, params) => const End3Widget(),
+        ),
+        FFRoute(
+          name: 'act-4',
+          path: '/act-4',
+          builder: (context, params) => const Act4Widget(),
+        ),
+        FFRoute(
+          name: 'end-4',
+          path: '/end-4',
+          builder: (context, params) => const End4Widget(),
+        ),
+        FFRoute(
+          name: 'act-5',
+          path: '/act-5',
+          builder: (context, params) => const Act5Widget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

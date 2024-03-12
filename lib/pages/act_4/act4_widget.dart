@@ -2,25 +2,27 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'story_model.dart';
-export 'story_model.dart';
+import 'act4_model.dart';
+export 'act4_model.dart';
 
-class StoryWidget extends StatefulWidget {
-  const StoryWidget({super.key});
+class Act4Widget extends StatefulWidget {
+  const Act4Widget({super.key});
 
   @override
-  State<StoryWidget> createState() => _StoryWidgetState();
+  State<Act4Widget> createState() => _Act4WidgetState();
 }
 
-class _StoryWidgetState extends State<StoryWidget> {
-  late StoryModel _model;
+class _Act4WidgetState extends State<Act4Widget> {
+  late Act4Model _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => StoryModel());
+    _model = createModel(context, () => Act4Model());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
@@ -54,7 +56,7 @@ class _StoryWidgetState extends State<StoryWidget> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(0.0),
                         child: Image.asset(
-                          'assets/images/cxi3o_1.jpg',
+                          'assets/images/5a6e9_5.jpg',
                           width: double.infinity,
                           height: MediaQuery.sizeOf(context).height * 0.2,
                           fit: BoxFit.cover,
@@ -79,22 +81,26 @@ class _StoryWidgetState extends State<StoryWidget> {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
                     child: Container(
                       decoration: const BoxDecoration(),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Text(
-                            'Act 1: High School',
+                            'Act 4: Choices',
                             textAlign: TextAlign.center,
-                            style: FlutterFlowTheme.of(context).displayLarge,
+                            style: FlutterFlowTheme.of(context)
+                                .displayLarge
+                                .override(
+                                  fontFamily: 'Open Sans Condensed',
+                                ),
                           ),
                           Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 10.0, 0.0, 0.0),
                             child: Text(
-                              'Alexis sighed as he sank into his usual seat in the back of his Environmental Science class. He never thought he\'d be the type to enjoy nature documentaries, but there was something soothing about watching scenes of untouched wilderness that made the chaos of high school fade away.\n\nHis mind drifted to memories of camping with his family as a kid - the crisp air, the crackling fire, the awe of staring up at a sky full of stars. Things seemed simpler back then. These days, Alexis could barely motivate himself to leave the house when he wasn\'t at school or work.\n\n\"As we\'ve been discussing,\" Ms. Klein\'s voice snapped Alexis back to attention, \"our individual actions do play a role in issues like climate change and pollution. But the blame placed on individuals is disproportionate to the broader systemic problems at the root of the environmental crisis, which makes up for around 80% of global pollution.\"\n\nAlexis sat up a little straighter. He\'d never thought about it like that before.\n\n\"Our consumer choices matter,\" Ms. Klein continued. \"But major change will only happen when governments and corporations are held accountable for prioritizing profits over the planet.\"\n\nMurmurs of agreement rippled through the classroom. Alexis looked around, surprised to see his classmates fully engaged for once. He locked eyes with his friend Jordan, who raised his eyebrows as if to say, \"She\'s got a point.\"\n\n\"So what can we do about it?\" a girl asked from the front row.\n\n\"There\'s power in numbers,\" said Ms. Klein. \"Especially your generation. New ideas, backed by research and data. Grassroots activism. Making noise on social media. Pressure from the public is what drives policy changes. Don\'t underestimate the power of your voice and your vote.\"\n\nThe bell rang, jolting Alexis from his thoughts. His peers filtered out of the classroom, buzzing with chatter about corporations, climate marches, voting ages.\n\nAlexis walked slowly behind, his mind racing. He\'d never realized how much bigger this issue was than just remembering to turn off the lights. It felt overwhelming yet exciting to think about being part of a movement for change.\n\nAs the class dispersed, Ms. Klein caught up with Alexis and his classmates.\n\n\"Hey, everyone,\" she announced with a smile. \"Considering our discussions today, how about we take some tangible action? There is a local park clean-up this Saturday. It\'s a small step, but it\'s a start. Who\'s in?\"\n\nAlexis exchanged glances with his classmates, and a ripple of enthusiasm spread through the group. Maybe this clean-up could be their first step towards making a difference, just like Ms. Klein said.\n\nYet, as Alexis walked away, conflicting thoughts swirled. \"Would that really make a change?” The global issues seemed insurmountable, drowning his hope.\n',
+                              'Alexis was eager to start his new job in the mayor\'s office. As a recent college graduate, he was ready to take on a position where he could really make a difference in the community. Alexis had always been passionate about environmental issues, and he hoped to influence positive change through his role in local government.\n\nHowever, it didn\'t take long for Alexis to realize that the political system was riddled with corruption. At first, it started small - a bribe here, a threat there. Alexis was uncomfortable with these tactics but felt powerless to stop them. Over time though, the corruption only grew worse. Powerful interests used coercion and money to get their way, regardless of ethics or the greater good.\n\nAfter a few years, Alexis found himself facing a difficult personal situation. His father had been diagnosed with advanced cancer, and the experimental treatments were astronomically expensive. The insurance company refused to cover the costs. Alexis\' salary alone wasn\'t nearly enough to pay the medical bills that were piling up.\n\nOne day, a lobbyist approached Alexis with an offer. In exchange for Alexis\' support on an upcoming zoning proposal, the lobbyist would ensure that Alexis\' father got the treatment he needed. Alexis was distraught - this went against everything he believed in. But how could he possibly refuse when his father\'s life hung in the balance?\n\nAs the critical zoning meeting approached, the pressure on Alexis intensified. Powerful voices told him that one compromised vote wouldn\'t hurt - no one would even know. Alexis thought of his selfless father who had always taught him to do the right thing, no matter what.\n',
                               textAlign: TextAlign.justify,
                               style: FlutterFlowTheme.of(context).bodyLarge,
                             ),
@@ -105,7 +111,7 @@ class _StoryWidgetState extends State<StoryWidget> {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(10.0, 20.0, 10.0, 50.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 50.0),
                     child: Container(
                       decoration: const BoxDecoration(),
                       child: Column(
@@ -123,7 +129,7 @@ class _StoryWidgetState extends State<StoryWidget> {
                             onPressed: () {
                               print('Button pressed ...');
                             },
-                            text: 'The clean up won\'t change anything..',
+                            text: 'I can\'t let my dad die',
                             options: FFButtonOptions(
                               height: 40.0,
                               padding: const EdgeInsetsDirectional.fromSTEB(
@@ -149,7 +155,7 @@ class _StoryWidgetState extends State<StoryWidget> {
                             onPressed: () {
                               print('Button pressed ...');
                             },
-                            text: 'You know what? I\'ll go, it\'ll be fun',
+                            text: 'Decline the bribe',
                             options: FFButtonOptions(
                               height: 40.0,
                               padding: const EdgeInsetsDirectional.fromSTEB(

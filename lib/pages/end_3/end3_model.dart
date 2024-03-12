@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'story_widget.dart' show StoryWidget;
+import 'end3_widget.dart' show End3Widget;
 import 'package:flutter/material.dart';
 
-class StoryModel extends FlutterFlowModel<StoryWidget> {
+class End3Model extends FlutterFlowModel<End3Widget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();

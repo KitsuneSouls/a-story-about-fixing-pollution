@@ -181,9 +181,9 @@ class ThemeTypography extends Typography {
 
   final FlutterFlowTheme theme;
 
-  String get displayLargeFamily => 'Outfit';
+  String get displayLargeFamily => 'Poppins';
   TextStyle get displayLarge => GoogleFonts.getFont(
-        'Outfit',
+        'Poppins',
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 64.0,
